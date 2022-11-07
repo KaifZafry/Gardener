@@ -1,0 +1,345 @@
+:root {
+    --primary: #348E38;
+    --secondary: #525368;
+    --light: #E8F5E9;
+    --dark: #0F4229;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "jost" , sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.Topbar{
+    background-color: var(--dark) !important;
+    height: 40px;
+}
+@media  screen and (max-width:768px){
+    .Topbar{
+        display: none;
+    }
+    .nav-btn{
+        display: block;
+    }
+}
+.Topbar .row{
+    padding-top: 6px;
+
+}
+.Topbar-left{
+    justify-content: space-evenly;
+}
+.navbar{
+    height: 100px !important;
+}
+.a-link h2{
+    display: inline-block;
+   margin-left: 50px;
+   font-weight: 700;
+   font-size: 40px;
+   color: #0F4229;
+   cursor: pointer;
+}
+.ul-div{
+    display: flex;
+    justify-content: space-around;
+
+}
+.nav-link{
+    font-size: 20px !important;
+    color: #313136;
+    margin-left: 10px;
+}
+.nav-link:hover{
+    color: #348E38;
+}
+.img{
+    position: relative;
+}
+.caption{
+    position: absolute;
+    top: 40%;
+    left: 27%;
+  
+    z-index: 26;
+}
+.caption h1{
+    font-size: 5rem;
+}
+.caption button{
+    border-radius: 0 !important;
+    padding: 20px 30px;
+    margin-left: 14rem ;
+}
+.text{
+    padding: 20px !important;
+}
+.box{
+    box-shadow: #313136;
+}
+.hero{
+    background-color: #fff;
+    margin-top: -60px;
+    z-index: 30;
+    position: relative;
+}
+.container{
+    background-color: #fff;
+    /* margin-top: -60px ; */
+    z-index: 30;
+    position: relative;
+}
+/* about section styling starts from here */
+
+.about-text{
+    padding-top: rem;
+}
+
+.about-img{
+    border-radius: 5px;
+}
+.about-heading{
+    margin-top: 1rem;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #348E38;
+    margin-bottom: 3rem;
+}
+.about-h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0F4229;
+
+}
+.about-icon{
+    border-left: 1px solid ;
+    padding-left:1rem ;
+}
+.about-btn{
+    padding: 15px 40px;
+    border-radius: 0%;
+    margin-top: 2rem ;
+}
+
+/* about section styling end here */
+
+.parallax{
+    background: url(../images/carousel-1.jpg) repeat fixed 100%;
+}
+
+.choose-h4{
+    font-weight: 600;
+    margin: 1rem 0;
+}
+.choose-h1{
+    font-weight: 800;
+    margin: 2rem 0;
+}
+.parts{
+    height: 400px;
+   
+   
+}
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25%;
+    background-color: rgb(213, 210, 206 ,0.4);
+    margin-top: 30px;
+}
+.inner-side{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25%;
+    margin-top: 35%;
+    background-color: rgb(213, 210, 206 ,0.4);
+}
+/* Services section styling starts from here */
+
+.services-h1{
+    font-size: 3rem;
+    font-weight:800;
+    color: #0F4229;
+}
+.services-item{
+    position: relative;
+    
+}
+.services-img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: -2;
+   opacity: 0;
+    transition: all 1s ease-out;
+    
+
+}
+.services-item:hover .services-img{
+   opacity: 1;
+    
+}
+.services-item:hover .services-icon{
+    background: var(--light);
+}
+.services-item:hover .services-text{
+    color: white;
+}
+.services-text{
+    padding: 2rem;
+    margin: 1rem 0;
+}
+.services-icon{
+   background: transparent;
+   border-radius: 100%;
+   height: 100px;
+   width: 100px;
+   transition: 0.5s;
+    
+}
+.services-icon img{
+    margin-top: 1rem;
+    
+   
+}
+.services-text svg{
+    background-color: #E8F5E9;
+}
+
+.servicesk-text button{
+    width: 31px;
+    height: 31px;
+    display: inline-flex;
+    align-items: center;
+    color: #0F4229;
+    background: var(--light);
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.services-item:hover button{
+    width: 112px;
+}
+.services-text a::after{
+    
+}
+.services-img img{
+    border-radius: 5px;
+}
+
+
+
+/* Services section styling end here */
+
+/* quote styling starts */
+
+.quote{
+    background: url(../images/carousel-2.jpg) repeat fixed 100% ;
+    width: 100%;
+    height: 100vh;
+
+}
+.quote-input{
+    background: var(--light);
+    color: var(--dark);
+    width:100%;
+    height:80px;
+
+}
+
+.message{
+    background:var(--light);
+    color: var(--dark);
+    width: 100%;
+    height: 80px;
+}
+/* quote styling end */
+
+
+/* products styling starts */
+
+.products-img{
+    position:relative;
+    overflow: hidden;
+}
+
+.products-img::before, .products-img::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(15, 66, 41, .6);
+    transition: 0.5s;
+
+}
+.products-img:hover::before, .products-img:hover::after{
+    width: 50%;
+}
+
+
+.products-img::after{
+    left: auto;
+    right: 0;
+}
+.products-col{
+    position: relative;
+}
+.portfolio-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.products-img:hover .portfolio-text{
+    opacity: 1;
+}
+/* products styling end */
+
+/* team section styling starts from here */
+
+.team-item{
+    position: relative;
+}
+.team-item:hover .team-text{
+    opacity: 1;
+    left: 0;
+}
+.team-text{
+    position: absolute;
+    background: #fff;
+    padding: 1.5rem;
+    width: 80%;
+    bottom: 45px ;
+    left: -100%;
+    opacity: 0;
+    border-radius: 0 4px 4px 0;
+    transition: .5s;
+}
+/* team section styling end here */
+
+/* footer section styling starts from here */
+
+.footer{
+    background-color: #0F4229;
+    color: #fff;
+    
+}
+.footer-row{
+    background-color: #0F4229;
+}
+/* footer section styling end  here */
